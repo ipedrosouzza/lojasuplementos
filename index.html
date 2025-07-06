@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerFit Suplementos - Sua Performance em Primeiro Lugar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1><i class="fas fa-dumbbell"></i> PowerFit</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="#home">Início</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="cart-btn" onclick="toggleCart()">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Maximize Sua Performance</h2>
+            <p>Os melhores suplementos esportivos para alcançar seus objetivos fitness</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">10k+</span>
+                    <span class="stat-label">Clientes Satisfeitos</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Produtos Originais</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">Entrega Rápida</span>
+                </div>
+            </div>
+            <button class="cta-btn" onclick="scrollToProducts()">
+                <i class="fas fa-fire"></i> Ver Produtos
+            </button>
+        </div>
+        <div class="hero-image">
+            <img src="images/products/atleta.jpg" alt="Atleta treinando com suplementos PowerFit">
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="produtos">
+        <div class="container">
+            <h2 class="section-title">Nossos Suplementos</h2>
+            <p class="section-subtitle">Produtos de alta qualidade para potencializar seus resultados</p>
+            
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="sobre">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Por que escolher a PowerFit?</h2>
+                    <div class="benefits">
+                        <div class="benefit">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <h4>Produtos Certificados</h4>
+                                <p>Todos os nossos suplementos possuem certificação ANVISA e são testados em laboratório.</p>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-shipping-fast"></i>
+                            <div>
+                                <h4>Entrega Rápida</h4>
+                                <p>Entregamos em todo o Brasil com agilidade e segurança para você não parar seus treinos.</p>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-user-md"></i>
+                            <div>
+                                <h4>Consultoria Especializada</h4>
+                                <p>Nossa equipe de nutricionistas está pronta para te ajudar a escolher os melhores produtos.</p>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-medal"></i>
+                            <div>
+                                <h4>Qualidade Premium</h4>
+                                <p>Trabalhamos apenas com as melhores marcas do mercado nacional e internacional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/products/suplementos-about.jpg" alt="Suplementos PowerFit de alta qualidade">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contato">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <p class="section-subtitle">Estamos aqui para ajudar você a alcançar seus objetivos</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>(11) 99999-8888</p>
+                            <a href="https://wa.me/5511999998888" target="_blank" class="contact-link">
+                                Falar Agora <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <h4>Instagram</h4>
+                            <p>@powerfitsuplementos</p>
+                            <a href="https://instagram.com/powerfitsuplementos" target="_blank" class="contact-link">
+                                Seguir <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Rua dos Atletas, 456<br>Vila Fitness - São Paulo, SP<br>CEP: 04567-890</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>contato@powerfitsuplementos.com.br</p>
+                            <a href="mailto:contato@powerfitsuplementos.com.br" class="contact-link">
+                                Enviar E-mail <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horário de Atendimento</h4>
+                            <p>Segunda à Sexta: 8h às 20h<br>Sábado: 8h às 16h<br>Domingo: 9h às 14h</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone Fixo</h4>
+                            <p>(11) 3456-7890</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Carrinho de Compras</h3>
+            <button class="close-cart" onclick="toggleCart()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be loaded here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total: R$ <span id="cartTotal">0,00</span></strong>
+            </div>
+            <button class="checkout-btn" onclick="openCheckout()">Finalizar Pedido</button>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="/placeholder.svg" alt="">
+                </div>
+                <div class="modal-info">
+                    <h3 id="modalTitle"></h3>
+                    <p class="modal-price" id="modalPrice"></p>
+                    <p class="modal-description" id="modalDescription"></p>
+                    <div class="modal-benefits" id="modalBenefits">
+                        <!-- Benefits will be loaded here -->
+                    </div>
+                    <div class="quantity-selector">
+                        <label>Quantidade:</label>
+                        <div class="quantity-controls">
+                            <button onclick="decreaseQuantity()">-</button>
+                            <span id="quantity">1</span>
+                            <button onclick="increaseQuantity()">+</button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn" onclick="addToCart()">
+                        <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal" id="checkoutModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeCheckoutModal()">&times;</span>
+            <div class="checkout-content">
+                <h3><i class="fab fa-whatsapp"></i> Finalizar Pedido via WhatsApp</h3>
+                <form id="checkoutForm">
+                    <div class="form-group">
+                        <label>Nome Completo:</label>
+                        <input type="text" id="customerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label>WhatsApp:</label>
+                        <input type="tel" id="customerPhone" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Endereço de Entrega:</label>
+                        <textarea id="customerAddress" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Forma de Pagamento:</label>
+                        <select id="paymentMethod" required>
+                            <option value="">Selecione</option>
+                            <option value="pix">PIX (5% desconto)</option>
+                            <option value="cartao">Cartão de Crédito</option>
+                            <option value="boleto">Boleto Bancário</option>
+                        </select>
+                    </div>
+                    <div class="checkout-total">
+                        <strong>Total: R$ <span id="checkoutTotal">0,00</span></strong>
+                    </div>
+                    <button type="submit" class="finalize-btn">
+                        <i class="fab fa-whatsapp"></i> Enviar Pedido
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-dumbbell"></i> PowerFit</h3>
+                    <p>Sua loja especializada em suplementos esportivos. Qualidade, confiança e resultados garantidos.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/powerfitsuplementos" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com/powerfitsuplementos" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://youtube.com/powerfitsuplementos" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://tiktok.com/@powerfitsuplementos" target="_blank">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Produtos</h4>
+                    <ul>
+                        <li><a href="#whey">Whey Protein</a></li>
+                        <li><a href="#creatina">Creatina</a></li>
+                        <li><a href="#bcaa">BCAA</a></li>
+                        <li><a href="#pre-treino">Pré-Treino</a></li>
+                        <li><a href="#vitaminas">Vitaminas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Atendimento</h4>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#entrega">Política de Entrega</a></li>
+                        <li><a href="#troca">Trocas e Devoluções</a></li>
+                        <li><a href="#consultoria">Consultoria Nutricional</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <div class="footer-contact">
+                        <p><i class="fab fa-whatsapp"></i> (11) 99999-8888</p>
+                        <p><i class="fas fa-phone"></i> (11) 3456-7890</p>
+                        <p><i class="fas fa-envelope"></i> contato@powerfitsuplementos.com.br</p>
+                        <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                    </div>
+                    <div class="payment-methods">
+                        <h5>Formas de Pagamento</h5>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-pix"></i>
+                            <i class="fas fa-barcode"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 PowerFit Suplementos. Todos os direitos reservados.</p>
+                <p>CNPJ: 98.765.432/0001-10 | Desenvolvido para atletas por atletas 💪</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5511999998888" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
