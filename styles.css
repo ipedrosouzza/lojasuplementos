@@ -1032,13 +1032,14 @@ body {
   .hero-image {
     order: 2; /* Imagem segundo */
     display: flex;
-    justify-content: flex-start;
+    justify-content: center; /* Centraliza a imagem */
+    width: 100%;
   }
 
   .hero-image img {
     height: 250px;
-    width: 70%;
-    max-width: 280px;
+    width: 100%; /* Usa toda a largura disponível */
+    max-width: 100%; /* Não ultrapassa o container */
     object-fit: cover;
     border-radius: 10px;
   }
@@ -1233,7 +1234,6 @@ body {
   }
 }
 
-/* Otimizações específicas para imagens */
 @media (max-width: 320px) {
   .hero-content h2 {
     font-size: 1.4rem;
@@ -1242,6 +1242,7 @@ body {
 
   .hero-image img {
     height: 200px;
+    width: 100%;
   }
 
   .product-image {
