@@ -29,33 +29,82 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h2>Maximize Sua Performance</h2>
-            <p>Os melhores suplementos esportivos para alcançar seus objetivos fitness</p>
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number">10k+</span>
-                    <span class="stat-label">Clientes Satisfeitos</span>
+    <!-- Hero Section - NOVO LAYOUT SOFISTICADO -->
+<section class="hero" id="home">
+    <div class="container">
+        <div class="hero-wrapper">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-fire"></i>
+                    <span>Líder em Suplementos Esportivos</span>
                 </div>
-                <div class="stat">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Produtos Originais</span>
+                
+                <h1>Maximize Sua Performance</h1>
+                
+                <p class="subtitle">
+                    Descubra os suplementos de mais alta qualidade para transformar seus treinos 
+                    e alcançar resultados extraordinários. Sua jornada fitness começa aqui.
+                </p>
+                
+                <div class="hero-stats-modern">
+                    <div class="stat-modern">
+                        <span class="number">10k+</span>
+                        <span class="label">Clientes Satisfeitos</span>
+                    </div>
+                    <div class="stat-modern">
+                        <span class="number">100%</span>
+                        <span class="label">Produtos Originais</span>
+                    </div>
+                    <div class="stat-modern">
+                        <span class="number">24h</span>
+                        <span class="label">Entrega Rápida</span>
+                    </div>
                 </div>
-                <div class="stat">
-                    <span class="stat-number">24h</span>
-                    <span class="stat-label">Entrega Rápida</span>
+                
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="scrollToProducts()">
+                        <i class="fas fa-shopping-bag"></i> Explorar Produtos
+                    </button>
+                    <button class="btn-secondary">
+                        <i class="fas fa-play"></i> Ver Demonstração
+                    </button>
                 </div>
             </div>
-            <button class="cta-btn" onclick="scrollToProducts()">
-                <i class="fas fa-fire"></i> Ver Produtos
-            </button>
+            
+            <div class="hero-visual">
+                <div class="hero-image-container">
+                    <img src="images/products/atleta.jpg" alt="Atleta PowerFit">
+                </div>
+                
+                <div class="floating-cards">
+                    <div class="floating-card card-1">
+                        <div class="card-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <div class="card-title">Força +40%</div>
+                        <div class="card-subtitle">Com nossos produtos</div>
+                    </div>
+                    
+                    <div class="floating-card card-2">
+                        <div class="card-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="card-title">Energia Máxima</div>
+                        <div class="card-subtitle">Treinos intensos</div>
+                    </div>
+                    
+                    <div class="floating-card card-3">
+                        <div class="card-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="card-title">Resultados</div>
+                        <div class="card-subtitle">Garantidos</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="hero-image">
-            <img src="images/products/atleta.jpg" alt="Atleta treinando com suplementos PowerFit">
-        </div>
-    </section>
+    </div>
+</section>
 
     <!-- Products Section -->
     <section class="products-section" id="produtos">
@@ -107,7 +156,7 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="images/products/suplementos-about.jpg" alt="Suplementos PowerFit de alta qualidade">
+                    <img src="images/about/suplementos-about.jpg" alt="Suplementos PowerFit de alta qualidade">
                 </div>
             </div>
         </div>
@@ -350,3 +399,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
